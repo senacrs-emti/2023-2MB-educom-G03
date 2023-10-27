@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cabecalho{
+    background-color: rgb(204, 222, 237);
+    height: 100px;
+}
+.imagem_espaco{
+    margin-top: 20%;
+    margin-left: 10%;
+    width: 450px
+}
+.espaco_texto{
+    width: 100px;
+    margin-bottom: 50%px;
+    margin-left: 50%;
+}
+img{
+    height: 400px;
+}
+.tituloobra{
+    margin-bottom: 50%;
+    margin-left: 50%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
