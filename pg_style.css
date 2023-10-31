@@ -2,25 +2,40 @@
     margin: 0;
     padding: 0;
 }
-.cabecalho{
-    background-color: rgb(204, 222, 237);
-    height: 100px;
-}
-.imagem_espaco{
-    margin-top: 20%;
-    margin-left: 10%;
-    width: 450px
+h1 {
+    margin-left: 47.5%;
+    margin-top: 100px;
 }
 .espaco_texto{
-    width: 100px;
-    margin-bottom: 50%px;
+    width: 50px;
+    margin-bottom: 500px;
     margin-left: 50%;
-}
-img{
-    height: 400px;
+    padding-bottom: 500px;
+    position:relative;
 }
 .tituloobra{
     margin-bottom: 50%;
     margin-left: 50%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.card1 {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.card2 {
+    margin-top: 100px;
+    margin-left: 1px;
+}
+.card3 {
+    margin-top: 100px;
+    margin-left: 1px;
+}
+.card4 {
+    margin-top: 100px;
+    margin-left: 1px;
+}
+
+img {
+    width: 400px;
+    height: 100%;
 }
