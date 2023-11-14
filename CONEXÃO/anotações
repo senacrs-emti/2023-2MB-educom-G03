@@ -1,0 +1,4 @@
+controller/acao/id
+index.php?controller=home&acao=lista&id=2014
+
+$_GET
