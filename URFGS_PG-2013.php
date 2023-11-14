@@ -40,7 +40,7 @@ $tituloLivro = 'Livro Muito Legal';
         <div class="card mb-3" style="max-width: 1180px;">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="./PAGINAS/img/cinzaescuro.png">
+                <img class="imglista" src="./PAGINAS/img/cinzaescuro.png">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -57,7 +57,7 @@ $tituloLivro = 'Livro Muito Legal';
           <div class="card mb-3" style="max-width: 1180px;">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="./PAGINAS/img/cinzaescuro.png">
+                <img class="imglista" src="./PAGINAS/img/cinzaescuro.png">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -75,7 +75,7 @@ $tituloLivro = 'Livro Muito Legal';
           <div class="card mb-3" style="max-width: 1180px;">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="./PAGINAS/img/cinzaescuro.png">
+                <img class="imglista" src="./PAGINAS/img/cinzaescuro.png">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -93,7 +93,7 @@ $tituloLivro = 'Livro Muito Legal';
           <div class="card mb-3" style="max-width: 1180px;">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="./PAGINAS/img/cinzaescuro.png">
+                <img class="imglista" src="./PAGINAS/img/cinzaescuro.png">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -111,7 +111,7 @@ $tituloLivro = 'Livro Muito Legal';
           <div class="card mb-3" style="max-width: 1180px;">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="./PAGINAS/img/cinzaescuro.png">
+                <img class="imglista" src="./PAGINAS/img/cinzaescuro.png">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -129,7 +129,7 @@ $tituloLivro = 'Livro Muito Legal';
           <div class="card mb-3" style="max-width: 1180px;">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="./PAGINAS/img/cinzaescuro.png">
+                <img class="imglista" src="./PAGINAS/img/cinzaescuro.png">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -147,7 +147,7 @@ $tituloLivro = 'Livro Muito Legal';
           <div class="card mb-3" style="max-width: 1180px;">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="./PAGINAS/img/cinzaescuro.png">
+                <img class="imglista" src="./PAGINAS/img/cinzaescuro.png">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -165,7 +165,7 @@ $tituloLivro = 'Livro Muito Legal';
           <div class="card mb-3" style="max-width: 1180px;">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="./PAGINAS/img/cinzaescuro.png">
+                <img class="imglista" src="./PAGINAS/img/cinzaescuro.png">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -183,7 +183,7 @@ $tituloLivro = 'Livro Muito Legal';
           <div class="card mb-3" style="max-width: 1180px;">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="./PAGINAS/img/cinzaescuro.png">
+                <img class="imglista" src="./PAGINAS/img/cinzaescuro.png">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -201,7 +201,7 @@ $tituloLivro = 'Livro Muito Legal';
           <div class="card mb-3" style="max-width: 1180px;">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="./PAGINAS/img/cinzaescuro.png">
+                <img class="imglista" src="./PAGINAS/img/cinzaescuro.png">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -219,7 +219,7 @@ $tituloLivro = 'Livro Muito Legal';
           <div class="card mb-3" style="max-width: 1180px;">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="./PAGINAS/img/cinzaescuro.png">
+                <img class="imglista" src="./PAGINAS/img/cinzaescuro.png">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -237,7 +237,7 @@ $tituloLivro = 'Livro Muito Legal';
           <div class="card mb-3" style="max-width: 1180px;">
             <div class="row no-gutters">
               <div class="col-md-4">
-                <img src="./PAGINAS/img/cinzaescuro.png">
+                <img class="imglista" src="./PAGINAS/img/cinzaescuro.png">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
