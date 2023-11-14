@@ -1,4 +1,12 @@
 <?php
 
-$conexao = mysqli_connect('localhost','root','','empresa');
+$conexao = mysqli_connect('localhost','root','','leituras');
+
+
+
+
+
+
+
+
 ?>
