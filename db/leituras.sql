@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 09/11/2023 às 02:32
--- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.2.4
+-- Tempo de geração: 16-Nov-2023 às 15:20
+-- Versão do servidor: 10.4.17-MariaDB
+-- versão do PHP: 7.3.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `albuns`
+-- Estrutura da tabela `albuns`
 --
 
 CREATE TABLE `albuns` (
@@ -37,10 +37,10 @@ CREATE TABLE `albuns` (
   `genero` int(11) NOT NULL,
   `lanc` int(11) NOT NULL,
   `edicao` varchar(25) NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Despejando dados para a tabela `albuns`
+-- Extraindo dados da tabela `albuns`
 --
 
 INSERT INTO `albuns` (`idalbum`, `titulo`, `autoria`, `resumo`, `context_hist`, `editora`, `genero`, `lanc`, `edicao`) VALUES
@@ -51,16 +51,16 @@ INSERT INTO `albuns` (`idalbum`, `titulo`, `autoria`, `resumo`, `context_hist`, 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `editora`
+-- Estrutura da tabela `editora`
 --
 
 CREATE TABLE `editora` (
   `ideditora` int(11) NOT NULL,
   `nome` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Despejando dados para a tabela `editora`
+-- Extraindo dados da tabela `editora`
 --
 
 INSERT INTO `editora` (`ideditora`, `nome`) VALUES
@@ -95,16 +95,16 @@ INSERT INTO `editora` (`ideditora`, `nome`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `genero`
+-- Estrutura da tabela `genero`
 --
 
 CREATE TABLE `genero` (
   `idgenero` int(11) NOT NULL,
   `nome` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Despejando dados para a tabela `genero`
+-- Extraindo dados da tabela `genero`
 --
 
 INSERT INTO `genero` (`idgenero`, `nome`) VALUES
@@ -117,12 +117,13 @@ INSERT INTO `genero` (`idgenero`, `nome`) VALUES
 (7, 'Tropicália'),
 (8, 'Ficcção histórica'),
 (9, 'História, não-ficção'),
-(10, 'Ficção política');
+(10, 'Ficção política'),
+(11, 'Realismo fantástico');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `livros`
+-- Estrutura da tabela `livros`
 --
 
 CREATE TABLE `livros` (
@@ -136,10 +137,10 @@ CREATE TABLE `livros` (
   `editora` int(11) NOT NULL,
   `lanc` int(11) NOT NULL,
   `edicao` varchar(25) NOT NULL DEFAULT ''
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Despejando dados para a tabela `livros`
+-- Extraindo dados da tabela `livros`
 --
 
 INSERT INTO `livros` (`idlivro`, `titulo`, `autoria`, `resumo`, `context_hist`, `personagens`, `genero`, `editora`, `lanc`, `edicao`) VALUES
@@ -160,7 +161,7 @@ INSERT INTO `livros` (`idlivro`, `titulo`, `autoria`, `resumo`, `context_hist`, 
 (15, 'A Noite das Mulheres Cantoras', 'Lídia Jorge', 'Quanto valem os nossos objetivos? Qual o limite do valor, que nos dispomos pagar, para os concretizarmos? Para Gisela Batista o fim justificava quaisquer meios e a pujança da sua convicção enleou, irremediavelmente, quatro companheiras num sonho comum: alcançar a fama com um conjunto de mulheres cantoras. Nani e Maria Luísa Alcides, Madalena Micaia e Solange de Matos subjugaram-se às vontades da obstinada mulher. Importava que as Após Calipso gravassem um vinil, invadindo a banda sonora da vida das pessoas com as suas canções. Toadas que deveriam tornar-se êxitos inolvidáveis, destinadas a marcarem décadas. É Solange, num monólogo, quem nos dá conta do sucedido, no final dos anos 80 do século vinte.', 'A história se passa no fim do século XX.', 'Solange de Matos e João de Lucena.', 1, 13, 2011, '2014'),
 (16, 'Dançar tango em Porto Alegre', 'Sergio Faraco', 'Nesta premiada coletânea de contos, o leitor encontrará condensado o universo ficcional de Sergio Faraco – um dos maiores contistas brasileiros. Contos do livro: Dois guaxos; Travessia; Noite de matar um homem; Guapear com frangos; O vôo da garça-pequena; Sesmarias do urutau mugidor; A língua do cão chinês; Idolatria; Outro brinde para Alice; Guerras Greco-Pérsicas; Majestic Hotel; Não chore, papai; Café Paris; A dama do bar Nevada; Um aceno na garoa; No tempo do trio Los Panchos; Conto do inverno; Dançar tango em Porto Alegre.', 'O autor nasceu em Alegrete, no Rio Grande do ', NULL, 1, 14, 2000, '2014'),
 (17, 'O amor de Pedro por João', 'Tabajara Ruas', 'O livro O Amor de Pedro por João mostra o outro lado da militância política: a solidão, tão contundente quanto a ponta dos fuzis; a esperança, única arma capaz de resistir à poderosa máquina repressora; e o carinho, unguento para as feridas da luta. Como tantos brasileiros, os protagonistas de O Amor de Pedro por João procuram abrigo, inicialmente, no Chile socialista de Allende. Afugentados pela revolução de Pinochet, são obrigados a partir para um novo exílio na Europa. Não há, no romance, dimensões heroicas — no meio dos conflitos, os personagens, apesar da truculência da perseguição, encontram tempo para venturas e desventuras românticas. Dramas e fugas para o exílio, para a insanidade ou para a morte dividem espaços com momentos de esperança, risos e solidariedade. O Amor de Pedro por João é o segundo romance de Tabajara Ruas.', ' Escrito em Copenhague, durante o exílio impo', NULL, 4, 5, 1982, '2014'),
-(18, 'O Cortiço', 'Aluísio Azevedo', 'O Cortiço é um romance naturalista do brasileiro Aluísio Azevedo publicado em 1890 que denuncia a exploração e as péssimas condições de vida dos moradores das estalagens ou dos cortiços cariocas do final do século XIX e posto a denunciar o capitalismo selvagem. Composta de 23 capítulos, O Cortiço apresenta um narrador onisciente (aquele que sabe de todo a história), sendo narrado em terceira pessoa. O tempo da narrativa é linear (começo, meio e fim), seguindo o tempo cronológico dos acontecimentos. Páginas: 354 (1a edição).', 'O romance O cortiço tem como pano de fundo o ', 'João Romão: português dono do cortiço, da ven', 4, 8, 1890, '2018, 2014'),
+(18, 'O Cortiço', 'Aluísio Azevedo', 'O Cortiço é um romance naturalista do brasileiro Aluísio Azevedo publicado em 1890 que denuncia a exploração e as péssimas condições de vida dos moradores das estalagens ou dos cortiços cariocas do final do século XIX e posto a denunciar o capitalismo selvagem. Composta de 23 capítulos, O Cortiço apresenta um narrador onisciente (aquele que sabe de todo a história), sendo narrado em terceira pessoa. O tempo da narrativa é linear (começo, meio e fim), seguindo o tempo cronológico dos acontecimentos. Páginas: 354 (1a edição).', 'O romance O cortiço tem como pano de fundo o ', 'João Romão: português dono do cortiço, da ven', 4, 8, 1890, '2018, 2017, 2016, 2015'),
 (19, 'Dom Casmurro', 'Machado de Assis', 'Dom Casmurro é um romance escrito por Machado de Assis, publicado em 1899 pela Livraria Garnier. Dom Casmurro, de Machado de Assis, teve sua primeira edição lançada em 1900. O livro pode ser compreendido como a autopsicanálise de Bento Santiago, que viveu uma história de amor com final trágico. Emotivamente, encontra-se mutilado, pois acredita ter sido traído pela esposa, Capitu, e pelo melhor amigo, Escobar.', 'O contexto histórico aparece de forma clara n', 'Bento Santiago, Escobar e Capitu, que represe', 4, 8, 1899, '2014'),
 (20, 'Gota D´Água', 'Chico Buarque e Paulo Pontes', 'Gota d\'água é o título da peça teatral, de autoria dos escritores brasileiros Chico Buarque e Paulo Pontes, escrita em 1975 e publicada em livro homônimo, em 1975, pela editora Civilização Brasileira.  A obra faz intertextualidade com Medéia, um clássico de Eurípedes, o qual tem inspirado vários trabalhos de cunho moral e social, no decorrer de toda a história da humanidade. A peça Gota d´Água traça o mito de personagens pobres e macumbeiros, contrastados com reis e feiticeiros da antiga história grega. Medéia, Jasão, Creonte, Aia de Medéia e o Coro Tradicional dos Gregos estão diferentemente caracterizados na obra atual. É um retrato da sociedade moderna, que explicitamente é injusta e cheia de contrastes sociais, realidade de muitos brasileiros do século XXI. O objetivo geral deste trabalho é demonstrar como ocorre a catarse na peça Gota d´Água. \'Gota d\'água\' é uma \'Medeia\' e brasileira. Chico Buarque e Paulo Pontes se reuniram para revitalizar o texto de Eurípedes, escrito quase meio milênio antes de Cristo, submetendo-o uma injeção de nossa realidade urbana. \'Medeia\' é uma história de reis e feiticeiros. \'Gota d\'água\' é uma história de pobres e macumbeiros.', 'Obra concebida sob alto grau de brasilidade, ', 'Medeia é Joana, mulher madura, sofrida, morad', 2, 25, 1975, '2019, 2018'),
 (21, 'A Hora da Estrela', 'Clarice Lispector', 'A Hora da Estrela é um romance literário da escritora brasileira Clarice Lispector. O romance narra a história da datilógrafa alagoana, Macabéa, que migra para o Rio de Janeiro, tendo sua rotina narrada por um escritor fictício chamado Rodrigo S.M. O narrador conta a história de Macabéa, jovem alagoana de 19 anos que vive no Rio de Janeiro. Órfã, mal se lembrava dos pais, que morreram quando ela era ainda criança. Adaptações: A Hora da Estrela (1985).', 'Sobre o autor: Clarice Lispector, nascida Cha', 'Personagens principais: Rodrigo S.M.: é o nar', 5, 16, 1977, '2019, 2018'),
@@ -188,14 +189,16 @@ INSERT INTO `livros` (`idlivro`, `titulo`, `autoria`, `resumo`, `context_hist`, 
 (42, 'Boca de Ouro', 'Nelson Rodrugues', 'Boca de ouro é uma tragédia carioca em três atos escrita por Nelson Rodrigues em 1959. O chofer de um ônibus que Nelson Rodrigues pegava para ir almoçar na casa da mãe tinha todos os 27 dentes de ouro. Orgulhoso de seu xodó, dizia sempre que os dentes eram de ouro maciço, 24 quilates. Impressionado com a história, o dramaturgo resolveu escrever uma peça que combinasse a dentadura dourada do motorista com uma personagem real do submundo carioca, o bicheiro Arlindo Pimenta. Assim nasceu Boca de Ouro, o bicheiro de Madureira que mandou trocar todos os dentes brancos e perfeitos de sua boca por pivôs de ouro puro. Malandro e cheio da legítima ginga carioca, Boca de Ouro nasceu numa pia de gafieira e seu primeiro banho foi com água de bica. Morre de complexo por causa da sua origem.  A partir da morte de Boca de Ouro, famoso bicheiro que teria mandado substituir todos os dentes por próteses de ouro (símbolo de vitória sobre a origem miserável), temos, a partir de uma reportagem policial, três versões do protagonista que nos são dadas por sua ex-amante, Dona Guigui. A cada versão, dependendo do estado emocional da mulher, surge um novo Boca de Ouro. Estreou no Teatro Federação no dia 13 de outubro de 1960. Reeditando a parceria com o autor, Ziembinski dirigiu a peça e atuou no papel-título.', 'Apesar da história tipicamente brasileira, a ', 'Boca de Ouro, Dona Guigui, Leleco, Celeste, C', 2, 2, 1959, '2013'),
 (43, 'A máquina de fazer espanhóis', 'Valter Hugo Mãe', 'A Máquina de Fazer Espanhóis é um livro sobre a terceira idade, sobre ficar velho, sobre a solidão, sobre as dores e as fraquezas – do corpo e da alma. É também sobre abandono familiar, mas também sobre amizade. A metáfora da máquina que produz espanhóis faz alusão a Portugal, um país que, assim como Silva, é assombrado pelos fantasmas de seu passado. Valter Hugo Mãe utiliza a prosa poética e não usa letras maiúsculas. É um pouco estranho, mas faz total sentido dentro de sua obra. Entrar numa máquina sem querer entrar e sair de lá diferente. É essa a proposta. Se pensarmos na ditadura, ela é assim, se pensarmos em um asilo, pode ser assim também. Se pensarmos nos imigrantes, também é possível ser assim.', 'Sobre o autor: Valter Hugo Mãe, escritor pert', NULL, 4, 17, 2010, '2021, 2020, 2019, 2020'),
 (44, 'Esaú e Jacó', 'Machado de Assis', 'Esaú e Jacó é o penúltimo livro de Machado de Assis, lançado em 1904, quatro anos antes da sua morte, pela Garnier, e, segundo a maioria dos críticos, em pleno apogeu literário, depois de escrever, em 1899, Dom Casmurro, o mais célebre de seus livros. Esaú e Jacó começa com a visita de Natividade, grávida de gêmeos, e sua irmã, Perpétua, a uma cabocla do Morro do Castelo. A futura mãe queria conhecer o destino dos filhos gêmeos, Pedro e Paulo. A previsão da cabocla é animadora: ‘serão grandes’. Isso, porém, não é suficiente para desfazer a inquietação de Natividade, que se preocupa com as possíveis brigas dos irmãos ainda no ventre. Ao chegar em casa, a mulher relata as previsões a Santos, seu marido. O homem fica feliz, mas resolve procurar o amigo e mestre espírita Plácido para saber sobre as brigas. O amigo o tranquiliza, afirmando os meninos seriam grandes homens e por isso brigavam antes mesmo do nascimento. Pedro e Paulo crescem idênticos fisicamente, mas completamente diferentes na personalidade. Paulo, republicano, ingressa na faculdade de Direito, e Pedro, monarquista, cursa Medicina. Ambos encantam-se por Flora, filha do político oportunista Batista e de Dª Cláudia. Com a nomeação de Batista para presidente de uma província do norte, a jovem, dividida entre os gêmeos, se desespera, sem querer deixar o Rio. Com a proclamação da república, a moça acaba permanecendo na cidade. No entanto, ainda indecisa, resolve ir para a casa da Rita, irmã do Conselheiro Aires, e assim ter mais tempo para escolher um dos irmãos. Antes de decidir, a jovem adoece e morre. Os irmãos sofrem, mas logo dão curso às suas carreiras. Os dois se enfrentam na vida política como deputados em lados opostos no parlamento. Com a morte de Natividade, atendendo a seu último pedido, cessam os desentendimentos. A paz dura pouco, logo os irmãos voltam a trocar farpas e terminam separados. Esaú e Jacó começa com a visita de Natividade, grávida de gêmeos, e sua irmã, Perpétua, a uma cabocla do Morro do Castelo. A futura mãe queria conhecer o destino dos filhos gêmeos, Pedro e Paulo. A previsão da cabocla é animadora: ‘serão grandes’. Isso, porém, não é suficiente para desfazer a inquietação de Natividade, que se preocupa com as possíveis brigas dos irmãos ainda no ventre. Ao chegar em casa, a mulher relata as previsões a Santos, seu marido. O homem fica feliz, mas resolve procurar o amigo e mestre espírita Plácido para saber sobre as brigas. O amigo o tranquiliza, afirmando os meninos seriam grandes homens e por isso brigavam antes mesmo do nascimento. Pedro e Paulo crescem idênticos fisicamente, mas completamente diferentes na personalidade. Paulo, republicano, ingressa na faculdade de Direito, e Pedro, monarquista, cursa Medicina. Ambos encantam-se por Flora, filha do político oportunista Batista e de Dª Cláudia. Com a nomeação de Batista para presidente de uma província do norte, a jovem, dividida entre os gêmeos, se desespera, sem querer deixar o Rio. Com a proclamação da república, a moça acaba permanecendo na cidade. No entanto, ainda indecisa, resolve ir para a casa da Rita, irmã do Conselheiro Aires, e assim ter mais tempo para escolher um dos irmãos. Antes de decidir, a jovem adoece e morre. Os irmãos sofrem, mas logo dão curso às suas carreiras. Os dois se enfrentam na vida política como deputados em lados opostos no parlamento. Com a morte de Natividade, atendendo a seu último pedido, cessam os desentendimentos. A paz dura pouco, logo os irmãos voltam a trocar farpas e terminam separados.', 'Sobre o autor: Machado de Assis é um dos mais', 'Conselheiro Alves: Narrador e personagem do r', 1, 8, 1904, '2014, 2013'),
-(45, 'Seleção de Obras Poéticas', 'Gregório de Matos', 'A obra Poemas escolhidos de Gregório de Matos é uma compilação de textos poéticos do escritor baiano que viveu no século XVII e foi um importante nome do barroco brasileiro.', 'Sobre o autor: Gregório de Matos Guerra, alcu', NULL, 5, 1, 1882, '2015, 2014, 2013');
+(45, 'Seleção de Obras Poéticas', 'Gregório de Matos', 'A obra Poemas escolhidos de Gregório de Matos é uma compilação de textos poéticos do escritor baiano que viveu no século XVII e foi um importante nome do barroco brasileiro.', 'Sobre o autor: Gregório de Matos Guerra, alcu', NULL, 5, 1, 1882, '2015, 2014, 2013'),
+(46, 'Seleção de Contos de Murilo Rubião', 'Murilo Rubião', '\'O pirotécnico Zacarias\', \'O ex-mágico da Taberna Minhota\', \'Bárbara\', \'A cidade\', \'Ofélia, meu cachimbo e o mar\', \'A flor de vidro\', \'Os dragões\', \'Teleco, o coelhinho\', \'O edifício\', \'O lodo\', \'O homem do boné cinzento\' e o \'O convidado.\'', 'Sobre o autor: Murilo Eugênio Rubião nasceu e', NULL, 11, 10, 2016, '2014, 2015, 2016'),
+(47, 'Seleção de Pe. Ãntonio Vieira', 'Padre Antônio Vieira', 'Sermão pelo Bom Sucesso das Armas de Portugal Contra as de Holanda; Sermão da Sexagésima; Sermão de Santo António aos Peixes.', 'Sobre o autor: Padre Antônio Vieira foi um or', NULL, 9, 11, 2019, '2018, 2017, 2016');
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices de tabela `albuns`
+-- Índices para tabela `albuns`
 --
 ALTER TABLE `albuns`
   ADD PRIMARY KEY (`idalbum`),
@@ -203,19 +206,19 @@ ALTER TABLE `albuns`
   ADD KEY `idgenero_idx` (`genero`);
 
 --
--- Índices de tabela `editora`
+-- Índices para tabela `editora`
 --
 ALTER TABLE `editora`
   ADD PRIMARY KEY (`ideditora`);
 
 --
--- Índices de tabela `genero`
+-- Índices para tabela `genero`
 --
 ALTER TABLE `genero`
   ADD PRIMARY KEY (`idgenero`);
 
 --
--- Índices de tabela `livros`
+-- Índices para tabela `livros`
 --
 ALTER TABLE `livros`
   ADD PRIMARY KEY (`idlivro`),
@@ -223,18 +226,18 @@ ALTER TABLE `livros`
   ADD KEY `editora` (`editora`);
 
 --
--- Restrições para tabelas despejadas
+-- Restrições para despejos de tabelas
 --
 
 --
--- Restrições para tabelas `albuns`
+-- Limitadores para a tabela `albuns`
 --
 ALTER TABLE `albuns`
   ADD CONSTRAINT `ideditora` FOREIGN KEY (`editora`) REFERENCES `editora` (`ideditora`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `idgenero` FOREIGN KEY (`genero`) REFERENCES `genero` (`idgenero`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Restrições para tabelas `livros`
+-- Limitadores para a tabela `livros`
 --
 ALTER TABLE `livros`
   ADD CONSTRAINT `editora` FOREIGN KEY (`editora`) REFERENCES `editora` (`ideditora`),
