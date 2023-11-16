@@ -1,13 +1,11 @@
 <?php
 
 $ano = $_GET['ano'];
-$vest = $_GET['vest'];
 
 $sql = "SELECT * FROM livros WHERE edicao LIKE '%$ano%'";
-$resumo = "SELECT * FROM livros WHERE idlivro LIKE 
+$resumo = "SELECT * FROM livros WHERE idlivro LIKE"; 
 
-
-echo $sql;
+//echo $sql;
 $tituloLivro = 'Livro Muito Legal';
 ?>
 
