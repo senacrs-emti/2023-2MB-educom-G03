@@ -82,4 +82,3 @@ if ($row3 = mysqli_fetch_array($result3, MYSQLI_ASSOC)) {
 </main>
 </body>
 </html>
-?>
