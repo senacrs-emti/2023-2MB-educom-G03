@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="PAGINAS/img/livro.png"/>
     <title>Leituras Obrigatórias</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./projeto/assets/style.css">
     <link rel="stylesheet" href="script.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="./projeto/assets/img/livro.png"/>
 </head>
 <body>
         <header>
             <nav class="navbar bg-primary" data-bs-theme="light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Leituras Obrigatórias da URFGS</a>
+                    <a class="navbar-brand" href="index.php">Leituras Obrigatórias da URFGS</a>
                     <form class="d-flex" role="search">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                       <button class="btn btn-outline-light" type="submit">Pesquisar</button>
@@ -47,7 +46,7 @@
         </div>
     </section>
     <footer>
-        <i class="fa-brands fa-square-github fa-bounce fa-2xl" style="color: #802782;"></i>
+    <a href="index.php" id="github"><img src="./projeto/assets/img/git.png"></a>
     </footer>
 </main>
 </body>

@@ -146,14 +146,12 @@ h1 {
     width: 400px;
     height: 100%;
 }
-.github {
-    display: block;
+#github {
     margin-top: 80px;
     margin-left: 50px;
-    width: 170px;
-    height: 150px;
+    width: 2px;
+    height: 5px;
 }
-footer {
-    background-color: #000000;
-    height: auto;
+footer{
+    color: black;
 }

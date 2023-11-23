@@ -27,13 +27,13 @@ $sqleditora = "SELECT nome FROM editora";
     <link rel="stylesheet" href="./projeto/assets/style.css">
     <link rel="stylesheet" href="./projeto/assets/backgroundlista.css">
     <link rel="stylesheet" href="script.js">
-    
+    <link rel="shortcut icon" href="./projeto/assets/img/livro.png"/>
 </head>
 <body>
     <header>
         <nav class="navbar bg-primary" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Leituras Obrigatórias da URFGS</a>
+                <a class="navbar-brand" href="index.php">Leituras Obrigatórias da URFGS</a>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-light" type="submit">Pesquisar</button>
@@ -79,6 +79,9 @@ if ($row3 = mysqli_fetch_array($result3, MYSQLI_ASSOC)) {
 
        </main>
     </section>
+    <footer>
+    <a href="" class="giticon"><img src="./projeto/assets/img/git.png"></a>
+    </footer>
 </main>
 </body>
 </html>
