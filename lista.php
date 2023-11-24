@@ -11,9 +11,9 @@ if (!$conn) {
 }
 
 $ano = $_GET['ano'];
-$sql = "SELECT * FROM livros WHERE edicao LIKE '%$ano%'";
-$sqlgen = "SELECT nome FROM genero";
-$sqleditora = "SELECT nome FROM editora";
+$sql = "SELECT * FROM livros WHERE edicao LIKE '%$row%'";
+$sqlgen = "SELECT * FROM genero ORDER BY '%$row%'";
+$sqleditora = "SELECT * FROM editora ORDER BY '%$row%'";
 
 ?>
 
@@ -47,12 +47,13 @@ $sqleditora = "SELECT nome FROM editora";
         <h1><?php echo $ano;?></h1>
 <?php
 $result = mysqli_query($conn, $sql);
-while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 $result2 = mysqli_query($conn, $sqlgen);
 if ($row2 = mysqli_fetch_array($result2, MYSQLI_ASSOC)) {
 $result3 = mysqli_query($conn, $sqleditora);
 if ($row3 = mysqli_fetch_array($result3, MYSQLI_ASSOC)) {
 ?>
+
       <div class="card1">
         <div class="card mb-3" style="max-width: 1180px;">
             <div class="row no-gutters">
