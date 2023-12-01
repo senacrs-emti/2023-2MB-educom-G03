@@ -45,8 +45,10 @@
             </div>
         </div>
     </section>
-    <footer>
-    <a href="index.php" id="github"><img src="./projeto/assets/img/git.png"></a>
+    <footer class="footer">
+
+    <a href=""><img src=""></a>
+
     </footer>
 </main>
 </body>

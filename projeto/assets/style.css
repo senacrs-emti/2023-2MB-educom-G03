@@ -146,12 +146,9 @@ h1 {
     width: 400px;
     height: 100%;
 }
-#github {
+#imggit {
     margin-top: 80px;
     margin-left: 50px;
-    width: 2px;
-    height: 5px;
-}
-footer{
-    color: black;
+    max-width: 2%;
+    max-height: 2;
 }
