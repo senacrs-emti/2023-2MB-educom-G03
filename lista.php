@@ -16,12 +16,9 @@ $sqlgen = ";";
 $sqleditora = "SELECT * FROM editora ORDER BY '%$sql%'";
 $sqlgen = "SELECT nome FROM genero";
 $sqleditora = "SELECT nome FROM editora";
-$sqlgen = "SELECT nome FROM genero";
-$sqleditora = "SELECT nome FROM editora";
 
 
-
-
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,20 +59,18 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
 
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
->>>>>>> parent of 5a80ccb (Update lista.php)
 
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
->>>>>>> parent of 3145f6a (lista)
->>>>>>> parent of 3f2b3e9 (TENTANDO)
+
 $result2 = mysqli_query($conn, $sqlgen);
 if ($row2 = mysqli_fetch_array($result2, MYSQLI_ASSOC)) 
 $result3 = mysqli_query($conn, $sqleditora);
 if ($row3 = mysqli_fetch_array($result3, MYSQLI_ASSOC)) 
 
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
-while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 
 
 ?>
@@ -87,8 +82,8 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title"><?php echo $tituloLivro;?></h5>
-                  <p class="card-text"><?php echo $sql;?></p>
+                  <h5 class="card-title"><?php echo $titulo?></h5>
+                  <p class="card-text"><?php echo $sql?></p>
                   <p class="card-text"><small class="text-muted">*GENEROS*</small></p>
                   <p class="card-text"><small class="text-muted">Editora</small></p>
                   <p class="card-text"><small class="text-muted">Publicado em XX/XX/XXXX</small></p>
@@ -97,14 +92,11 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
             </div>
           </div>
         </div>
-<?php
-}
-?>
 
        </main>
     </section>
     <footer>
-    <a href="index.php" id="github"><img src="./projeto/assets/img/git.png"></a>
+    <a href="index.php" id="github"></a>
         <div class="fi">
     <i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>
     </div>

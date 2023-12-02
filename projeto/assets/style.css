@@ -179,3 +179,7 @@ p.nomes{
     display: inline-block;
     color: white;
 }
+img {
+    height: 50px;
+    width: 50px;
+}
