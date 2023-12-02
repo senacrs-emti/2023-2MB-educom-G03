@@ -12,11 +12,14 @@ if (!$conn) {
 
 $ano = $_GET['ano'];
 $sql = "SELECT * FROM livros WHERE edicao LIKE '%$ano%'";
+<<<<<<< HEAD
 $sqlgen = ";";
 $sqleditora = "SELECT * FROM editora ORDER BY '%$sql%'";
 
+=======
 $sqlgen = "SELECT nome FROM genero";
 $sqleditora = "SELECT nome FROM editora";
+<<<<<<< HEAD
 <<<<<<< HEAD
 $sqlgen = "SELECT nome FROM genero";
 $sqleditora = "SELECT nome FROM editora";
@@ -24,6 +27,9 @@ $sqleditora = "SELECT nome FROM editora";
 =======
  
 >>>>>>> parent of 5a80ccb (Update lista.php)
+=======
+>>>>>>> parent of 3145f6a (lista)
+>>>>>>> parent of 3f2b3e9 (TENTANDO)
 
 ?>
 
@@ -58,6 +64,7 @@ $sqleditora = "SELECT nome FROM editora";
 <?php
 $result = mysqli_query($conn, $sql);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
@@ -68,6 +75,12 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 >>>>>>> parent of 5a80ccb (Update lista.php)
+=======
+while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
+=======
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+>>>>>>> parent of 3145f6a (lista)
+>>>>>>> parent of 3f2b3e9 (TENTANDO)
 $result2 = mysqli_query($conn, $sqlgen);
 if ($row2 = mysqli_fetch_array($result2, MYSQLI_ASSOC)) 
 $result3 = mysqli_query($conn, $sqleditora);
@@ -96,17 +109,15 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
               </div>
             </div>
           </div>
-</div>
-</main>
-       <footer>
-        <div class="fi">
-    <i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>
-    </div>
-    <div class="nomesdiv">
-        <p class="nomes"><a href="https://github.com/nathaliaalencastro">Github Nathalia</a></p>
-        <p class="nomes"><a href="https://github.com/annalialira">Github Anna</a></p>
-        <p class="nomes"><a href="https://github.com/HallsRaul">Github Raul</a></p>
-    </div>
+        </div>
+<?php
+}
+?>
+
+       </main>
+    </section>
+    <footer>
+    <a href="" class="giticon"><img src="./projeto/assets/img/git.png"></a>
     </footer>
 </main>
 </body>
