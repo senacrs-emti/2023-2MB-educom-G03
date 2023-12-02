@@ -11,9 +11,9 @@ if (!$conn) {
 }
 
 $ano = $_GET['ano'];
-$sql = "SELECT * FROM livros WHERE edicao LIKE '%$ano%'";
-$sqlgen = ";";
-$sqleditora = "SELECT * FROM editora ORDER BY '%$sql%'";
+$sql = "SELECT * FROM livros WHERE edicao LIKE '%$row%'";
+$sqlgen = "SELECT * FROM genero ORDER BY '%$row%'";
+$sqleditora = "SELECT * FROM editora ORDER BY '%$row%'";
 
 =======
 $sqlgen = "SELECT nome FROM genero";
