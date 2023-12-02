@@ -17,9 +17,13 @@ $sqleditora = "SELECT * FROM editora ORDER BY '%$sql%'";
 
 $sqlgen = "SELECT nome FROM genero";
 $sqleditora = "SELECT nome FROM editora";
+<<<<<<< HEAD
 $sqlgen = "SELECT nome FROM genero";
 $sqleditora = "SELECT nome FROM editora";
 
+=======
+ 
+>>>>>>> parent of 5a80ccb (Update lista.php)
 
 ?>
 
@@ -53,16 +57,27 @@ $sqleditora = "SELECT nome FROM editora";
         <h1><?php echo $ano;?></h1>
 <?php
 $result = mysqli_query($conn, $sql);
+<<<<<<< HEAD
 
 
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
+=======
+
+while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
+>>>>>>> parent of 5a80ccb (Update lista.php)
 $result2 = mysqli_query($conn, $sqlgen);
 if ($row2 = mysqli_fetch_array($result2, MYSQLI_ASSOC)) 
 $result3 = mysqli_query($conn, $sqleditora);
 if ($row3 = mysqli_fetch_array($result3, MYSQLI_ASSOC)) 
+<<<<<<< HEAD
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
+=======
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+
+>>>>>>> parent of 5a80ccb (Update lista.php)
 ?>
       <div class="card1">
         <div class="card mb-3" style="max-width: 1180px;">
