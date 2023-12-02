@@ -12,14 +12,12 @@ if (!$conn) {
 
 $ano = $_GET['ano'];
 $sql = "SELECT * FROM livros WHERE edicao LIKE '%$ano%'";
-<<<<<<< HEAD
 $sqlgen = ";";
 $sqleditora = "SELECT * FROM editora ORDER BY '%$sql%'";
 
-=======
 $sqlgen = "SELECT nome FROM genero";
 $sqleditora = "SELECT nome FROM editora";
->>>>>>> parent of 3145f6a (lista)
+ 
 
 ?>
 
@@ -52,11 +50,9 @@ $sqleditora = "SELECT nome FROM editora";
         <h1><?php echo $ano;?></h1>
 <?php
 $result = mysqli_query($conn, $sql);
-<<<<<<< HEAD
+
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
-=======
-while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
->>>>>>> parent of 3145f6a (lista)
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 $result2 = mysqli_query($conn, $sqlgen);
 if ($row2 = mysqli_fetch_array($result2, MYSQLI_ASSOC)) 
 $result3 = mysqli_query($conn, $sqleditora);
@@ -81,15 +77,17 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
               </div>
             </div>
           </div>
-        </div>
-<?php
-}
-?>
-
-       </main>
-    </section>
-    <footer>
-    <a href="" class="giticon"><img src="./projeto/assets/img/git.png"></a>
+</div>
+</main>
+       <footer>
+        <div class="fi">
+    <i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>
+    </div>
+    <div class="nomesdiv">
+        <p class="nomes"><a href="https://github.com/nathaliaalencastro">Github Nathalia</a></p>
+        <p class="nomes"><a href="https://github.com/annalialira">Github Anna</a></p>
+        <p class="nomes"><a href="https://github.com/HallsRaul">Github Raul</a></p>
+    </div>
     </footer>
 </main>
 </body>
