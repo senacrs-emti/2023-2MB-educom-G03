@@ -50,15 +50,13 @@ $sqleditora = "SELECT * FROM editora ORDER BY '%$sql%'";
         <h1><?php echo $ano;?></h1>
 <?php
 $result = mysqli_query($conn, $sql);
-<<<<<<< HEAD
-while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 $result2 = mysqli_query($conn, $sqlgen);
-if ($row2 = mysqli_fetch_array($result2, MYSQLI_ASSOC)) {
+if ($row2 = mysqli_fetch_array($result2, MYSQLI_ASSOC)) 
 $result3 = mysqli_query($conn, $sqleditora);
-if ($row3 = mysqli_fetch_array($result3, MYSQLI_ASSOC)) {
-=======
+if ($row3 = mysqli_fetch_array($result3, MYSQLI_ASSOC)) 
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
->>>>>>> parent of 066c121 (CODIGO SQL FUNCIONANDO!)
+
 ?>
 
       <div class="card1">
