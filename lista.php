@@ -12,12 +12,17 @@ if (!$conn) {
 
 $ano = $_GET['ano'];
 $sql = "SELECT * FROM livros WHERE edicao LIKE '%$ano%'";
+<<<<<<< HEAD
 $sqlgen = ";";
 $sqleditora = "SELECT * FROM editora ORDER BY '%$sql%'";
 
 $sqlgen = "SELECT nome FROM genero";
 $sqleditora = "SELECT nome FROM editora";
  
+=======
+$sqlgen = "SELECT nome FROM genero";
+$sqleditora = "SELECT nome FROM editora";
+>>>>>>> parent of 3145f6a (lista)
 
 ?>
 
@@ -50,15 +55,23 @@ $sqleditora = "SELECT nome FROM editora";
         <h1><?php echo $ano;?></h1>
 <?php
 $result = mysqli_query($conn, $sql);
+<<<<<<< HEAD
 
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
+=======
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+>>>>>>> parent of 3145f6a (lista)
 $result2 = mysqli_query($conn, $sqlgen);
 if ($row2 = mysqli_fetch_array($result2, MYSQLI_ASSOC)) 
 $result3 = mysqli_query($conn, $sqleditora);
+<<<<<<< HEAD
 if ($row3 = mysqli_fetch_array($result3, MYSQLI_ASSOC)) 
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 
+=======
+if ($row3 = mysqli_fetch_array($result3, MYSQLI_ASSOC)) {
+>>>>>>> parent of 3145f6a (lista)
 ?>
       <div class="card1">
         <div class="card mb-3" style="max-width: 1180px;">
