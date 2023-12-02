@@ -47,6 +47,14 @@
     </section>
     <footer>
     <a href="index.php" id="github"><img src="./projeto/assets/img/git.png"></a>
+        <div class="fi">
+    <i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>
+    </div>
+    <div class="nomesdiv">
+        <p class="nomes"><a href="https://github.com/nathaliaalencastro">Github Nathalia</a></p>
+        <p class="nomes"><a href="https://github.com/annalialira">Github Anna</a></p>
+        <p class="nomes"><a href="https://github.com/HallsRaul">Github Raul</a></p>
+    </div>
     </footer>
 </main>
 </body>

@@ -11,33 +11,16 @@ if (!$conn) {
 }
 
 $ano = $_GET['ano'];
-$sql = "SELECT * FROM livros WHERE edicao LIKE '%$row%'";
-$sqlgen = "SELECT * FROM genero ORDER BY '%$row%'";
-$sqleditora = "SELECT * FROM editora ORDER BY '%$row%'";
-<<<<<<< HEAD
-
-=======
+$sql = "SELECT * FROM livros WHERE edicao LIKE '%$ano%'";
+$sqlgen = ";";
+$sqleditora = "SELECT * FROM editora ORDER BY '%$sql%'";
 $sqlgen = "SELECT nome FROM genero";
 $sqleditora = "SELECT nome FROM editora";
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 $sqlgen = "SELECT nome FROM genero";
 $sqleditora = "SELECT nome FROM editora";
 
-=======
- 
->>>>>>> parent of 5a80ccb (Update lista.php)
-=======
->>>>>>> parent of 3145f6a (lista)
->>>>>>> parent of 3f2b3e9 (TENTANDO)
-=======
- 
->>>>>>> parent of 5a80ccb (Update lista.php)
-=======
->>>>>>> parent of 229d0ae (Merge branch 'BACKEND' of https://github.com/senacrs-emti/2023-2MB-educom-G03 into BACKEND)
 
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -69,43 +52,32 @@ $sqleditora = "SELECT nome FROM editora";
         <h1><?php echo $ano;?></h1>
 <?php
 $result = mysqli_query($conn, $sql);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
 
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
-=======
+
 
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 >>>>>>> parent of 5a80ccb (Update lista.php)
-=======
+
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
-=======
-while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
 >>>>>>> parent of 3145f6a (lista)
 >>>>>>> parent of 3f2b3e9 (TENTANDO)
-=======
-
-while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
-while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
->>>>>>> parent of 5a80ccb (Update lista.php)
 $result2 = mysqli_query($conn, $sqlgen);
 if ($row2 = mysqli_fetch_array($result2, MYSQLI_ASSOC)) 
 $result3 = mysqli_query($conn, $sqleditora);
 if ($row3 = mysqli_fetch_array($result3, MYSQLI_ASSOC)) 
-<<<<<<< HEAD
+
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
-=======
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 
-<<<<<<< HEAD
->>>>>>> parent of 5a80ccb (Update lista.php)
-=======
->>>>>>> parent of 5a80ccb (Update lista.php)
+
 ?>
       <div class="card1">
         <div class="card mb-3" style="max-width: 1180px;">
@@ -132,7 +104,15 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
        </main>
     </section>
     <footer>
-    <a href="" class="giticon"><img src="./projeto/assets/img/git.png"></a>
+    <a href="index.php" id="github"><img src="./projeto/assets/img/git.png"></a>
+        <div class="fi">
+    <i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>
+    </div>
+    <div class="nomesdiv">
+        <p class="nomes"><a href="https://github.com/nathaliaalencastro">Github Nathalia</a></p>
+        <p class="nomes"><a href="https://github.com/annalialira">Github Anna</a></p>
+        <p class="nomes"><a href="https://github.com/HallsRaul">Github Raul</a></p>
+    </div>
     </footer>
 </main>
 </body>
