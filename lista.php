@@ -2,7 +2,7 @@
 
 include_once "./projeto/config.php";
 
-$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+$conn = mysqli_connect('localhost', 'root','', 'leituras');
 
 if (!$conn) {
 
@@ -11,9 +11,15 @@ if (!$conn) {
 }
 
 $ano = $_GET['ano'];
+<<<<<<< HEAD
 $sql = "SELECT * FROM livros WHERE edicao LIKE '%$ano%'";
 $sqlgen = ";";
 $sqleditora = "SELECT * FROM editora ORDER BY '%$sql%'";
+=======
+$sql = "SELECT resumo FROM livros WHERE edicao LIKE '%$ano%'";
+
+$tituloLivro = 'Livro Muito Legal';
+>>>>>>> parent of 066c121 (CODIGO SQL FUNCIONANDO!)
 
 ?>
 
@@ -25,9 +31,11 @@ $sqleditora = "SELECT * FROM editora ORDER BY '%$sql%'";
     <title>Leituras Obrigatórias</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./projeto/assets/style.css">
-    <link rel="stylesheet" href="./projeto/assets/backgroundlista.css">
     <link rel="stylesheet" href="script.js">
+<<<<<<< HEAD
     <link rel="shortcut icon" href="./projeto/assets/img/livro.png"/>
+=======
+>>>>>>> parent of 066c121 (CODIGO SQL FUNCIONANDO!)
 </head>
 <body>
     <header>
@@ -47,11 +55,15 @@ $sqleditora = "SELECT * FROM editora ORDER BY '%$sql%'";
         <h1><?php echo $ano;?></h1>
 <?php
 $result = mysqli_query($conn, $sql);
+<<<<<<< HEAD
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 $result2 = mysqli_query($conn, $sqlgen);
 if ($row2 = mysqli_fetch_array($result2, MYSQLI_ASSOC)) {
 $result3 = mysqli_query($conn, $sqleditora);
 if ($row3 = mysqli_fetch_array($result3, MYSQLI_ASSOC)) {
+=======
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+>>>>>>> parent of 066c121 (CODIGO SQL FUNCIONANDO!)
 ?>
 
       <div class="card1">
@@ -62,19 +74,17 @@ if ($row3 = mysqli_fetch_array($result3, MYSQLI_ASSOC)) {
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title"><?php echo $row['titulo'];?></h5>
-                  <p class="card-text"><?php echo $row['resumo'];?></p>
-                  <p class="card-text"><small class="text-muted"><?php echo $row2['nome']?></small></p>
-                  <p class="card-text"><small class="text-muted"><?php echo $row3['nome']?></small></p>
-                  <p class="card-text"><small class="text-muted">Publicado em <?php echo $row['lanc']?></small></p>
+                  <h5 class="card-title"><?php echo $tituloLivro;?></h5>
+                  <p class="card-text"><?php echo $sql;?></p>
+                  <p class="card-text"><small class="text-muted">*GENEROS*</small></p>
+                  <p class="card-text"><small class="text-muted">Editora</small></p>
+                  <p class="card-text"><small class="text-muted">Publicado em XX/XX/XXXX</small></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 <?php
-}
-}
 }
 ?>
 
