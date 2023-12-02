@@ -6,15 +6,14 @@
     <title>Leituras Obrigatórias</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./projeto/assets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
- <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="script.js">
     <link rel="shortcut icon" href="./projeto/assets/img/livro.png"/>
 </head>
 <body>
         <header>
             <nav class="navbar bg-primary" data-bs-theme="light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.php"><p>Leituras Obrigatórias da URFGS</p></a>
+                    <a class="navbar-brand" href="index.php">Leituras Obrigatórias da URFGS</a>
                     <form class="d-flex" role="search">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                       <button class="btn btn-outline-light" type="submit">Pesquisar</button>
@@ -47,14 +46,7 @@
         </div>
     </section>
     <footer>
-        <div class="fi">
-    <i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>
-    </div>
-    <div class="nomesdiv">
-        <p class="nomes"><a href="https://github.com/nathaliaalencastro">Github Nathalia</a></p>
-        <p class="nomes"><a href="https://github.com/annalialira">Github Anna</a></p>
-        <p class="nomes"><a href="https://github.com/HallsRaul">Github Raul</a></p>
-    </div>
+    <a href="index.php" id="github"><img src="./projeto/assets/img/git.png"></a>
     </footer>
 </main>
 </body>

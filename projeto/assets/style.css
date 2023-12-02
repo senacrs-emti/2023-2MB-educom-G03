@@ -1,14 +1,6 @@
 .cabecalho{
-    background-color: cadetblue;
+    background-color: rgb(204, 222, 237);
     height: 100px;
-}
-.navbar-brand p{
-    color: aliceblue;
-    font-size: 20px;
-    margin-top: 15px;
-}
-.bg-primary{
-    background-color: cadetblue;
 }
 .ul1 {
     display: inline;
@@ -23,7 +15,7 @@
     margin-right: 30px;
     margin-bottom: 100px;
     margin-top: 10px;
-    background-color: cadetblue;
+    background-color: steelblue;
     transition: all 0.5s;
     cursor: pointer;
     border: none;
@@ -42,7 +34,7 @@
     border-radius: 1000px;
     margin-right: 30px;
     margin-left: 90px;
-    background-color: cadetblue;
+    background-color: steelblue;
     transition: all 0.5s;
     cursor: pointer;
     border: none;
@@ -161,29 +153,5 @@ h1 {
     height: 5px;
 }
 footer{
-    background-color: cadetblue;
-    height: 120px;
-}
-.fi{
-    size: 80px;
-    height: 50px;
-    width: 40px;
-    margin-top: 40px;
-    margin-left: 30px;
-    display: inline-block;
-}
-i{
-    margin-top: 20px;
-}
-.nomesdiv{
-    height: auto;
-    width: 592px;
-    display: inline-block;
-}
-p.nomes{
-    display: inline;
-    padding-left: 50px;
-    display: inline-block;
-    color: white;
-
+    color: black;
 }
