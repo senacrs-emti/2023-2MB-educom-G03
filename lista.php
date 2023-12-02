@@ -12,13 +12,13 @@ if (!$conn) {
 
 $ano = $_GET['ano'];
 $sql = "SELECT * FROM livros WHERE edicao LIKE '%$ano%'";
-<<<<<<< HEAD
 $sqlgen = ";";
 $sqleditora = "SELECT * FROM editora ORDER BY '%$sql%'";
 
 =======
 $sqlgen = "SELECT nome FROM genero";
 $sqleditora = "SELECT nome FROM editora";
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 $sqlgen = "SELECT nome FROM genero";
@@ -30,6 +30,9 @@ $sqleditora = "SELECT nome FROM editora";
 =======
 >>>>>>> parent of 3145f6a (lista)
 >>>>>>> parent of 3f2b3e9 (TENTANDO)
+=======
+ 
+>>>>>>> parent of 5a80ccb (Update lista.php)
 
 ?>
 
@@ -65,6 +68,7 @@ $sqleditora = "SELECT nome FROM editora";
 $result = mysqli_query($conn, $sql);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
@@ -81,6 +85,11 @@ while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 >>>>>>> parent of 3145f6a (lista)
 >>>>>>> parent of 3f2b3e9 (TENTANDO)
+=======
+
+while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
+while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) 
+>>>>>>> parent of 5a80ccb (Update lista.php)
 $result2 = mysqli_query($conn, $sqlgen);
 if ($row2 = mysqli_fetch_array($result2, MYSQLI_ASSOC)) 
 $result3 = mysqli_query($conn, $sqleditora);
@@ -90,6 +99,9 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
 =======
 while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 
+<<<<<<< HEAD
+>>>>>>> parent of 5a80ccb (Update lista.php)
+=======
 >>>>>>> parent of 5a80ccb (Update lista.php)
 ?>
       <div class="card1">
