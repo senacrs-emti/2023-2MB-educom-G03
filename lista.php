@@ -14,6 +14,7 @@ $ano = $_GET['ano'];
 $sql = "SELECT * FROM livros WHERE edicao LIKE '%$row%'";
 $sqlgen = "SELECT * FROM genero ORDER BY '%$row%'";
 $sqleditora = "SELECT * FROM editora ORDER BY '%$row%'";
+<<<<<<< HEAD
 
 =======
 $sqlgen = "SELECT nome FROM genero";
@@ -33,6 +34,8 @@ $sqleditora = "SELECT nome FROM editora";
 =======
  
 >>>>>>> parent of 5a80ccb (Update lista.php)
+=======
+>>>>>>> parent of 229d0ae (Merge branch 'BACKEND' of https://github.com/senacrs-emti/2023-2MB-educom-G03 into BACKEND)
 
 ?>
 
