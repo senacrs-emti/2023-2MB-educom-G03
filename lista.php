@@ -11,15 +11,10 @@ if (!$conn) {
 }
 
 $ano = $_GET['ano'];
-<<<<<<< HEAD
 $sql = "SELECT * FROM livros WHERE edicao LIKE '%$ano%'";
 $sqlgen = ";";
 $sqleditora = "SELECT * FROM editora ORDER BY '%$sql%'";
-=======
-$sql = "SELECT resumo FROM livros WHERE edicao LIKE '%$ano%'";
 
-$tituloLivro = 'Livro Muito Legal';
->>>>>>> parent of 066c121 (CODIGO SQL FUNCIONANDO!)
 
 ?>
 
